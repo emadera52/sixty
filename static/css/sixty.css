@@ -1,0 +1,310 @@
+/**
+ * Bootstrap v3.0.1 by @fat and @mdo
+ * Copyright 2013 Twitter, Inc.
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Modified for sixtyplusadventures.com by emadera52
+ *
+ */
+
+body {
+    margin: 0px;
+    font-size: 12pt;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+
+a {
+color: #5a9e6c;
+}
+
+textarea {
+	width: 100%;
+}
+
+.nav .a {
+    color: #f8fff8;
+}
+
+p {
+    margin: 0px 0px 10px;
+}
+
+h1 {
+    margin: 10px 0px;
+    font-family: inherit;
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#alert60 {
+	width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.hero-unit {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.hero-unit h1 {
+    color: #8c5927;
+    font-size: 60pt;
+    line-height: 74px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero-unit h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    color: #ae7b48;
+    font-size: 30pt;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sign-up h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+	font-family: 'Droid Sans', Helvetica, Arial, Tahoma, Geneva, sans-serif;  
+    font-size: 24pt;
+	color: #6a3705;
+    line-height: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign-up h3 {
+	max-width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18pt;
+    line-height: 28px;
+    font-weight: 600;
+	background: #ffebd8;
+    text-align: center;
+	border: 2px solid #ae7b48;
+	border-radius: 12px;
+}
+
+.sign-up a {
+	font-size: 16pt;
+	line-height: 26px;
+	color:#6a3705;
+	font-weight: 600;
+	background: #ffebd8;
+	border: 1px solid #ae7b48;
+	border-radius: 6px;
+}
+
+#beta-signup {
+    width: 80%;
+	margin-left: 10%;
+    background-image: url(/static/img/bkgnd_ocean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	border: 2px solid #7eb48d;
+	border-radius: 18px;
+}
+
+.subtitle {
+    margin: 20px 0px 20px;
+    color: #000010;
+    font-size: 20pt;
+    line-height: 31px;
+    font-weight: 600;
+    text-align: center;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+input, textarea, keygen, select, button {
+    margin: 0em;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+}
+
+.sign-up {
+padding-bottom: 10px;
+text-align: center;
+}
+
+.profile-form {
+text-align: center;
+}
+
+.field {
+    width: 100%;
+	max-width: 480px;
+    margin: auto;
+    margin-bottom: 5px;
+    height: 48px;
+    padding-right: 10px;
+    padding-left: 15px;
+    border: 2px;
+	border-color: #2c5863; 
+    background-color: rgba(255, 255, 255, 0.701961);
+    box-shadow: transparent 0px 0px 8px 0px inset, rgba(0, 0, 0, 0.109804) 0px 0px 0px 1px inset;
+    transition: box-shadow 150ms ease;
+    -webkit-transition: box-shadow 150ms ease;
+    color: #4c7883;
+    font-size: 12pt;
+}
+
+.button {
+    width: 100%;
+	max-width: 320px;
+    height: 48px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #4c7883 0%, #a7bfc4 100%);
+    background-repeat: repeat-x;
+    color: #f0f8ff;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+.const-button {
+    height: 48px;
+    padding: 4px 30px;
+    margin-left: 45%;
+    background-image: linear-gradient(to top, #678eca 0%, #a1c3e5 100%);
+    background-repeat: repeat-x;
+    color: #f5f5ff;
+    border: 2px solid #4c7883;
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button:hover,
+.button:focus {
+    font-size: 16pt;
+    color: #0a3b47;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-info {
+	display: inline;
+    height: 30px;
+    width: 20px;
+}
+
+.img-text {
+	position:absolute;
+	display: inline;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.img-info:hover .img-text {
+	visibility: visible;
+	opacity: 1;
+}
+
+.info-text {
+    margin-top: 2px;
+    margin-left: 2px;
+    font-size: 10pt;
+    font-weight: 500;
+    line-height: 18px;
+    color: inherit;
+}
+
+#msg-cols {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+#msg-cols img {
+    max-width: 100%;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+#images {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 33px;
+    display: inline-block;
+}
+
+.home-box h2 {
+    margin-top: 0;
+    color: #f04c5c;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    border-bottom: 1px solid #DDD;
+    margin: 15px 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.home-box  .icon {
+    color: #f04c5c;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    font-size: 60pt;
+    height: 70px;
+    display: block;
+}
+
+.home-box .title {
+    color: #5a9e6c;
+    padding: 0 10px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #5a9e6c;
+    text-align: left;
+}
+
+.home-box .content {
+    margin: 10px 0 10px;
+    padding: 0 10px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #1a4b57;
+    text-align: left;
+}
+
+.home-box .dest{
+    margin-left: 10px;
+	color: #8c5927;
+	font-weight: bold;
+}
+
+.home-box .comment{
+    text-align: center;
+}
