@@ -123,7 +123,6 @@ textarea.form-control {
 #wrapper {
     min-height: 100% !important;
     height: auto !important;
-    height: 100%;
 	padding-bottom: 20px;
 }
 
@@ -145,7 +144,7 @@ textarea.form-control {
     background-image: linear-gradient(to top, #4c7883 0%, #a7bfc4 100%);
     background-repeat: repeat-x;
     color: rgb(126, 124, 135);
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 #footer img {
