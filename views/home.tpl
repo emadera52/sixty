@@ -1,6 +1,7 @@
 <div id="main">
 	<div class="sign-up">
-	{{if .InSession}}Signed in as <b>{{.Username}}</b>&nbsp;&nbsp;<a href="#auth">&nbsp;Click Here&nbsp;</a>&nbsp; for more information{{else}}<a href="#auth">&nbsp;Sign in / Register&nbsp;</a>{{end}}
+	{{if .IsDelete}}<a href="#auth">&nbsp;Confirm Delete&nbsp;</a>
+	{{else if .InSession}}Signed in as <b>{{.Username}}</b>&nbsp;&nbsp;<a href="#auth">&nbsp;Click Here&nbsp;</a>&nbsp; for more information{{else}}<a href="#auth">&nbsp;Sign in / Register&nbsp;</a>{{end}}
 	</div>
 	<div class="container" id="msg-cols">
 		<div class="row home-box">

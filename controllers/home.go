@@ -284,7 +284,7 @@ func (hc *HomeController) Register() {
 }
 
 /* Profile() is the active content handler for "/profile"
- * it presents and processes the registration form
+ * it presents and processes the profile form
  */
 func (hc *HomeController) Profile() {
 	hc.activeContent("profile")
@@ -614,6 +614,7 @@ func (hc *HomeController) Delete() {
 
 	hc.Data["Username"] = sm["username"]
 	hc.Data["Autolog"] = sm["autolog"]
+	hc.Data["IsDelete"] = false
 
 	// Parse the RequestURI
 	uPrms, err := url.Parse(hc.Ctx.Request.URL.RequestURI())
@@ -623,9 +624,10 @@ func (hc *HomeController) Delete() {
 	}
 
 	// If redirected from Profile page, Request params include "display=y"
-	// If "display" key found, return will display confirmation page.
+	// If "display" key found, return will display delete.tpl.
 	qm, _ := url.ParseQuery(uPrms.RawQuery)
 	if _, ok := qm["display"]; ok {
+		hc.Data["IsDelete"] = true
 		return
 	}
 

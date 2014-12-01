@@ -21,7 +21,7 @@
 			<form id="signup" action="/profile" method="POST">
 				<div><input class="field" name="email"
 					type="email" value={{.Email}}
-					maxlength="128"/>
+					maxlength="128" autofocus/>
 					<div class="img-info">
 					  <img src="static/img/base/info.png" alt="info" />
 					  <p class="img-text">Changing your email address will reset your status to unverified.</p>
