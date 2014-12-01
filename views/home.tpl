@@ -1,4 +1,7 @@
 <div id="main">
+	<div class="sign-up">
+	{{if .InSession}}Signed in as <b>{{.Username}}</b>&nbsp;&nbsp;<a href="#auth">&nbsp;Click Here&nbsp;</a>&nbsp; for more information{{else}}<a href="#auth">&nbsp;Sign in / Register&nbsp;</a>{{end}}
+	</div>
 	<div class="container" id="msg-cols">
 		<div class="row home-box">
 		  <div class="col-md-5">
@@ -50,5 +53,7 @@
 		</div>
 	</div> <!-- end container msg-cols -->
 </div> <!-- end main content -->	
+    <a id="auth"></a>
+	<div class="sign-up"><br>Return to &nbsp;<a href="/">&nbsp;Top&nbsp;</a></div>
 	<div class="wrapper-push"></div>
 </div> <!-- end wrapper started in Header -->

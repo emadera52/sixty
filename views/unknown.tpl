@@ -32,8 +32,8 @@
 			<h3>Or <em>Register</em> to get <em>60+</em> Early Bird privileges.</h3>
 			<br><h3>Or continue as an unregistered guest.
 			</h3>
-			<h3>Check out the overview below, then choose a
-			<br>topic from the menu above to get more details.<br></h3>
+			<h3>Check out the overview above, then choose a
+			<br>topic from the top menu to get more details.<br></h3>
 			<br><b><span style="color:#f0f8ff">Thank you for your interest.</span></b>
 			</p>
 		</div>	

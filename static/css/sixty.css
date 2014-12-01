@@ -15,7 +15,7 @@ body {
 }
 
 a {
-color: #5a9e6c;
+	color: #5a9e6c;
 }
 
 textarea {
@@ -75,6 +75,11 @@ hr {
     line-height: 36px;
     font-weight: 500;
     text-align: center;
+}
+
+.sign-up {
+padding-bottom: 10px;
+text-align: center;
 }
 
 .sign-up h2 {
@@ -149,11 +154,6 @@ input, textarea, keygen, select, button {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-}
-
-.sign-up {
-padding-bottom: 10px;
-text-align: center;
 }
 
 .profile-form {

@@ -1,4 +1,4 @@
 {{.Header}}
-{{.LayoutContent}}
 {{.Home}}
+{{.LayoutContent}}
 {{.Footer}}
