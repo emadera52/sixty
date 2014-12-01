@@ -34,7 +34,8 @@ Then you can...
 * Uses Beego's ORM for Database access
 * Demonstrates a simple 1:many Database relationship
 * Uses Beego's per request *context* along with persistent *sessions*
-* Use app as a template for gaging public interest in any idea
+* Demonstrates *bootstap's* responsive grid. Usable phone to desktop 
+* App can be used as a template for gaging public interest in any idea
 
 ## Documentation (Technical)
 
@@ -47,6 +48,13 @@ Note that all code is vendored. Using Beego version 1.4.1
 * This is my first **Go** project
 * This is the first project I've published on GitHub
 * Constructive suggestions and criticism solicited.
+
+## TODO
+
+* Make project go gettable (per on feedback from eliot5)
+* Layout changes etc (per feedback from egonelbre on reddit)
+* Finish all *under construction* pages
+* Create a demo *destination* site with video, ads, etc.
 
 ## LICENSE
 
