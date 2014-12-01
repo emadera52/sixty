@@ -1,4 +1,6 @@
-CREATE DATABASE `sixtyplus` /*!40100 COLLATE 'utf8_general_ci' */
+CREATE DATABASE `sixtyplus` /*!40100 COLLATE 'utf8_general_ci' */;
+
+USE `sixtyplus`;
 
 CREATE TABLE `user` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
