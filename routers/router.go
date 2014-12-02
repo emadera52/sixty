@@ -20,7 +20,7 @@ package routers
 
 import (
 	"github.com/astaxie/beego"
-	"sixty/controllers"
+	"github.com/emadera52/sixty/controllers"
 )
 
 func init() {
