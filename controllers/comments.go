@@ -24,7 +24,7 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"sixty/models"
+	"github.com/emadera52/sixty/models"
 )
 
 // HTML value indicating that a checkbox or radio button is selected
