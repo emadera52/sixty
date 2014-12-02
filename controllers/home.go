@@ -7,8 +7,8 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"sixty/crypto"
-	"sixty/models"
+	"github.com/emadera52/sixty/crypto"
+	"github.com/emadera52/sixty/models"
 )
 
 const (
