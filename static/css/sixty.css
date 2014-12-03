@@ -23,7 +23,8 @@ textarea {
 }
 
 .nav .a {
-    color: #f8fff8;
+	font-size 12pt;
+    color: #f8faff;
 }
 
 p {
@@ -113,10 +114,14 @@ text-align: center;
 .sign-up a {
 	font-size: 16pt;
 	line-height: 26px;
-	color:#6a3705;
 	font-weight: 600;
-	background: #ffebd8;
-	border: 1px solid #ae7b48;
+/*	color:#6a3705;
+	background: #ffebd8; 
+*/
+    background-image: linear-gradient(to bottom, #4c7883 0%, #a7bfc4 100%);
+    background-repeat: repeat-x;
+    color: #f0f8ff;
+	border: 1px solid #4c7883;
 	border-radius: 6px;
 }
 

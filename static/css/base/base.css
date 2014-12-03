@@ -12,7 +12,7 @@ html, body {
 
 body {
     font-size: 14px;
-    background-color: #f0f8ff;
+    background-color: #f8faff;
     ;
 }
 
@@ -121,9 +121,12 @@ textarea.form-control {
 }
 
 #wrapper {
-    min-height: 100% !important;
-    height: auto !important;
-	padding-bottom: 20px;
+	min-height: 100%;
+	margin: 0 auto -66px; /* negative value of footer's height */
+}
+
+#wrapper-push {
+   height: 66px;
 }
 
 #main {
@@ -139,8 +142,7 @@ textarea.form-control {
 
 /* footer */
 #footer {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 8px;
     background-image: linear-gradient(to top, #4c7883 0%, #a7bfc4 100%);
     background-repeat: repeat-x;
     color: rgb(126, 124, 135);

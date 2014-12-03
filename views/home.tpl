@@ -56,5 +56,5 @@
 </div> <!-- end main content -->	
     <a id="auth"></a>
 	<div class="sign-up"><br>Return to &nbsp;<a href="/">&nbsp;Top&nbsp;</a></div>
-	<div class="wrapper-push"></div>
+	<div id="wrapper-push"></div>
 </div> <!-- end wrapper started in Header -->
