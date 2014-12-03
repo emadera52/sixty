@@ -27,6 +27,8 @@ This will install the application executable **sixty** (linux) or **sixty.exe** 
 Click **Clone in Desktop** if you don't plan to submit updates to the project.
 
 Click **Fork** to create a new branch with the potential, but no obligation, to contribute fixes, changes, new stuff to the project.
+If you haven't done so [set up Git](https://help.github.com/articles/set-up-git/). Be sure [authentication is in place](https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git) as well.
+Then Click **Clone in Desktop** to transfer project source code to your local git repository.
 
 Click **Download ZIP** to get a completely independent copy to do with as you please within the limits of the *LICENSE* (see below).
 
