@@ -22,11 +22,15 @@ See comments in **main.go** regarding correct database registration.
 
 This will install the application executable **sixty** (linux) or **sixty.exe** (windows) in *GOPATH/bin* which is why it's handy to add that to your *PATH*.
 
-## Get the Source Code 
+## Get the Source Code
 
-Click **Clone in Desktop** if you don't plan to submit updates to the project.
+#### **NOTICE:** New Development Moved to Dev60 Branch.
 
-Click **Fork** to create a new branch with the potential, but no obligation, to contribute fixes, changes, new stuff to the project.
+From the **master** branch, click **Clone in Desktop** if you don't plan to submit updates to the project.
+
+To **Fork** this project with the intent of contributing bug fixes,
+modification or new stuff follow the [instructions here](https://help.github.com/articles/fork-a-repo/)
+using the **dev60** branch.
 
 Click **Download ZIP** to get a completely independent copy to do with as you please within the limits of the *LICENSE* (see below).
 
