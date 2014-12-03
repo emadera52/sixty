@@ -1,3 +1,5 @@
+// Package main defines functions to initialize database access via Beego's ORM,
+// enables persistent sessions and starts the app's built-in server
 package main
 
 import (
@@ -10,7 +12,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// Resgister the sixtyplus database with Beego's ORM
+// Init resgister the sixtyplus database with Beego's ORM
 // IMPORTANT: Edit sixty/conf/app.conf changing 'mysqluser' and 'mysqlpass'
 // to the values you use to access your MySQL database
 // If the DB is not on the app's server at localhost:3306, edit
