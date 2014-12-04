@@ -12,6 +12,7 @@ Visit the *60+* Adventures website at http://60plusadventures.com
 Everything below assumes you have installed Go and defined **$GOPATH** (linux) or **%GOPATH%** (windows). [This document](https://golang.org/doc/code.html#GOPATH) explains GOPATH setup. [This site](http://www.computerhope.com/issues/ch000549.htm) explains how windows users can create **%GOPATH%** and edit **PATH**. 
 
 ### Database Setup
+Create a user with ALL permissions if one does not already exist.
 The file *setup.sql* contains SQL to create the database and the required tables (assuming you use MySQL). Beego Also supports *SQL Lite* and *Postgres*, however you will need to modify the SQL as needed.
 
 See comments in **main.go** regarding correct database registration.
@@ -24,11 +25,13 @@ This will install the application executable **sixty** (linux) or **sixty.exe** 
 
 ## Get the Source Code 
 
-Click **Clone in Desktop** if you don't plan to submit updates to the project.
+#### **NOTICE:** New Development Moved to Dev60 Branch.
 
-Click **Fork** to create a new branch with the potential, but no obligation, to contribute fixes, changes, new stuff to the project.
-If you haven't done so [set up Git](https://help.github.com/articles/set-up-git/). Be sure [authentication is in place](https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git) as well.
-Then Click **Clone in Desktop** to transfer project source code to your local git repository.
+From the **master** branch, click **Clone in Desktop** if you don't plan to submit updates to the project.
+
+To **Fork** this project with the intent of contributing bug fixes,
+modification or new stuff follow the [instructions here](https://help.github.com/articles/fork-a-repo/)
+using the **dev60** branch.
 
 Click **Download ZIP** to get a completely independent copy to do with as you please within the limits of the *LICENSE* (see below).
 
