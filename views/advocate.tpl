@@ -1,4 +1,7 @@
 	<div class="container" >
+		<div class="sign-up">
+			<a href="#auth">&nbsp;Comment&nbsp;</a><br><br>
+		</div>
 		<div class="row home-box">
 			<div class="col-md-5">
 				<p class="title">What We're Up To</p>
@@ -10,6 +13,10 @@
 				<p class="content">The ideal Advocate is active in promoting the tourist destination they call home. Experience helping local businesses develop promotional campaigns is a plus.<br><br>Your input on changes to the home page are appreciated. Also, when a destination is selected, a new page (the main page for that destination) will open. Creating an example is high on our priority list. As an Advocate, what would you like to see on a destination's main page?<br><br>What do you think of including a custom web page for each advertiser? Links on the destination's main page would open that Provider's custom page.</p>
 			</div>
 			{{template "destinations.tpl" .}}
+			<div class="col-md-10">
+				<a id="auth"></a>
+				<div class="sign-up"><br>Return to &nbsp;<a href="/comments?advocate=y">&nbsp;Top&nbsp;</a></div>
+			</div>
 			{{if .InSession}} {{template "comment.tpl" .}} {{else}}
 			{{template "reqlogin.tpl"}}
 			{{end}}

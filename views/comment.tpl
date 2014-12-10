@@ -16,6 +16,6 @@
 					<input type="hidden" name="cmntcat" value={{.CmntCat}}>
 					<br>
 					<input class="button" type="submit"
-					value="Submit Comment"/>
+					value="Submit"/>
 				</form>
 			</div>

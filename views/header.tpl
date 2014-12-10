@@ -60,9 +60,9 @@
 							<li {{if .IsAdvocate}}class="active"{{end}}><a href="/comments?advocate=y">Advocate</a></li>
 							<li {{if .IsProvider}}class="active"{{end}}><a href="/comments?provider=y">Provider</a></li>
 							<li {{if .IsSupporter}}class="active"{{end}}><a href="/comments?supporter=y">Supporter</a></li>
-							<li {{if .IsFAQ}}class="active"{{end}}><a href="/construction?faq=y">FAQ</a></li>
-							<li {{if .IsBlog}}class="active"{{end}}><a href="/construction?blog=y">Blog</a></li>
-							<li {{if .IsAbout}}class="active"{{end}}><a href="/construction?about=y">About Us</a></li>
+							<li {{if .IsFAQ}}class="active"{{end}}><a href="/comments?faq=y">FAQ</a></li>
+							<li {{if .IsBlog}}class="active"{{end}}><a href="/blog?dest=blog">Blog</a></li>
+							<li {{if .IsAbout}}class="active"{{end}}><a href="/comments?about=y">About Us</a></li>
 						</ul>
 					</div>
 				</div>

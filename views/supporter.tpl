@@ -1,4 +1,7 @@
 	<div class="container" >
+		<div class="sign-up">
+			<a href="#auth">&nbsp;Comment&nbsp;</a><br><br>
+		</div>
 		<div class="row home-box">
 			<div class="col-md-5">
 				<p class="title">What We're Up To</p>
@@ -10,6 +13,10 @@
 				<p class="content">When a destination is selected, the main page for that destination will open. As a corporate Supporter or an agency working on their behalf, you may find the new home page and/or selected destination pages of interest.<br><br>Creating an example destination page is high on our priority list. As a <em>60+</em> corporate Supporter what would you like to see on a destination's main page?<br><br>A custom web page for each active Supporter is under consideration. Promotional links on selected pages would open your custom page. It could also be cross linked to your existing web site(s). What are your thoughts on this idea?</p>
 			</div>
 			{{template "destinations.tpl" .}}
+			<div class="col-md-10">
+				<a id="auth"></a>
+				<div class="sign-up"><br>Return to &nbsp;<a href="/comments?supporter=y">&nbsp;Top&nbsp;</a></div>
+			</div>
 			{{if .InSession}} {{template "comment.tpl" .}} {{else}}
 			{{template "reqlogin.tpl"}}
 			{{end}}

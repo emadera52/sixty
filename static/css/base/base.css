@@ -163,7 +163,7 @@ textarea.form-control {
 .f-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 940px;
+    max-width: 1080px;
 }
 
 .copyright {
@@ -381,9 +381,4 @@ a.color-link:hover,
 .btn.disabled {
     background-image: none;
     background-color: #ddd;
-}
-
-/* dropdown login */
-#dropdown-login {
-    width: 280px;
 }

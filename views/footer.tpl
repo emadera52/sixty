@@ -1,20 +1,20 @@
-<footer id="footer">
-    <div class="f-container">
-        <div class="row">
-            <div class="col-md-9">
-                <p class="copyright">Copyright &copy; 2014 | 60+ Adventures! | All rights reserved.</p>
-            </div>
-            <div class="col-md-3 align-right">
-              <a class="social-btn" href="/construction?facebook=y">
-                <img src="static/img/base/facebook-icon32.png"></a>
-              <a class="social-btn" href="/construction?twitter=y">
-                <img src="static/img/base/twitter-icon32.png"></a>
-              <a class="social-btn" href="/construction?email=y">
-                <img src="static/img/base/email-icon32.png"></a>
-            </div>
-        </div>
-    </div>
-</footer>
+	<footer id="footer">
+		<div class="f-container">
+			<div class="row">
+				<div class="col-md-9">
+					<p class="copyright">Copyright &copy; 2014 | 60+ Adventures! | All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Built on Beego</em></p>
+				</div>
+				<div class="col-md-3 align-right">
+				  <a class="social-btn" href="/construction?facebook=y">
+					<img src="static/img/base/facebook-icon32.png"></a>
+				  <a class="social-btn" href="/construction?twitter=y">
+					<img src="static/img/base/twitter-icon32.png"></a>
+				  <a class="social-btn" href="/construction?email=y">
+					<img src="static/img/base/email-icon32.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 <!--
 <script>

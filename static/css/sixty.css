@@ -299,7 +299,16 @@ text-align: center;
     margin: 10px 0 10px;
     padding: 0 10px;
     line-height: 1.5;
-    letter-spacing: 1px;
+    color: #1a4b57;
+    text-align: left;
+}
+
+.home-box .question {
+    margin: 10px 0 10px;
+    padding: 0 10px;
+    line-height: 1.5;
+	font-size: 12pt;
+	font-weight: 600;
     color: #1a4b57;
     text-align: left;
 }
@@ -307,9 +316,49 @@ text-align: center;
 .home-box .dest{
     margin-left: 10px;
 	color: #8c5927;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .home-box .comment{
     text-align: center;
+}
+
+.blogpost .navleft {
+    float: left;
+    font-size: 14pt
+}
+.blogpost .navright {
+    float: right;
+    font-size: 14pt
+}
+
+.blogpost .title {
+    padding: 0 10px;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #375EAB;
+    text-align: left;
+}
+
+.blogpost .linktitle {
+    padding: 0 10px;
+	font-size: 16pt;
+	line-height: 22px;
+	font-weight: bold;
+    color: #173E9B;
+    text-align: left;
+}
+
+.blogpost .linkto{
+	margin-left: 0px;
+	color: #375EAB;
+	font-weight: 600;
+    text-align: left;
+}
+
+.blogpost img {
+    width: 50%;
+	margin-left: 10px;
+	margin-right: 20px;
+	float: left;
 }

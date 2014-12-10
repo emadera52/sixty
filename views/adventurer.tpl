@@ -1,4 +1,7 @@
 	<div class="container" >
+		<div class="sign-up">
+			<a href="#auth">&nbsp;Comment&nbsp;</a><br><br>
+		</div>
 		<div class="row home-box">
 			<div class="col-md-5">
 				<p class="title">What We're Up To</p>
@@ -10,6 +13,10 @@
 				<p class="content">We'd like your input as work begins on the <em>60+</em> Adventures home page. It will be different from the current home page.<br><br>Differences will include content specifically directed toward Adventurers. Menu options will change and there will be a column showing popular destinations as illustrated on the right. How would you like to see destinations organized? What filter options would you like to see, if any?<br><br>When a destination is selected, a new page will open. It will be the main page for that destination. Creating an example is high on our priority list. As a retired traveller, what would you like to see on a destination's main page?</p>
 			</div>
 			{{template "destinations.tpl" .}}
+			<div class="col-md-10">
+				<a id="auth"></a>
+				<div class="sign-up"><br>Return to &nbsp;<a href="/comments?adventurer=y">&nbsp;Top&nbsp;</a></div>
+			</div>
 			{{if .InSession}} {{template "comment.tpl" .}} {{else}}
 			{{template "reqlogin.tpl"}}
 			{{end}}
