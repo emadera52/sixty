@@ -42,7 +42,7 @@ func (cp *ConstructionController) activeContent(view string) {
 	cp.LayoutSections["Footer"] = "footer.tpl"
 	cp.TplNames = view + ".tpl"
 
-	cp.Data["Website"] = ProgTitle
+	cp.Data["Website"] = SiteTitle
 }
 
 // Construction controls the presentation of pages under construction"

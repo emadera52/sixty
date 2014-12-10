@@ -49,7 +49,7 @@ func (cc *CommentsController) activeContent(view string) {
 	cc.LayoutSections["Footer"] = "footer.tpl"
 	cc.TplNames = view + ".tpl"
 
-	cc.Data["Website"] = ProgTitle
+	cc.Data["Website"] = SiteTitle
 	cc.Data["xsrftoken"] = template.HTML(cc.XsrfFormHtml())
 }
 
@@ -120,6 +120,20 @@ func (cc *CommentsController) Comment() {
 		cc.Data["TagTxt"] = "Information for 60+ Supporters"
 		cc.Data["CmntCat"] = Supporter
 		cc.activeContent("supporter")
+		return
+	}
+	if _, ok := qm["faq"]; ok {
+		cc.Data["IsFAQ"] = true
+		cc.Data["TagTxt"] = "Frequently Asked Questions"
+		cc.Data["CmntCat"] = Faq
+		cc.activeContent("faq")
+		return
+	}
+	if _, ok := qm["about"]; ok {
+		cc.Data["IsAbout"] = true
+		cc.Data["TagTxt"] = "About 60+ Adventures"
+		cc.Data["CmntCat"] = About
+		cc.activeContent("about")
 		return
 	}
 

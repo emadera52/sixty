@@ -11,10 +11,9 @@ import (
 	"github.com/emadera52/sixty/models"
 )
 
-const (
-	// Program name for title
-	ProgTitle     = "60+ Adventures"
-	DenyAutoLogin = "Another user has already enabled auto-login on this device"
+var (
+	// Name used for website title
+	SiteTitle string = beego.AppConfig.String("apptitle")
 )
 
 // Define category code constants
@@ -28,6 +27,11 @@ const (
 	Faq
 	Blog
 	About
+)
+
+// TODO identify and add other constant strings
+const (
+	DenyAutoLogin = "Another user has already enabled auto-login on this device"
 )
 
 // type Home Controller declares a receiver for methods that define
@@ -52,7 +56,7 @@ func (hc *HomeController) activeContent(view string) {
 	hc.LayoutSections["Footer"] = "footer.tpl"
 	hc.TplNames = view + ".tpl"
 
-	hc.Data["Website"] = ProgTitle
+	hc.Data["Website"] = SiteTitle
 	hc.Data["xsrftoken"] = template.HTML(hc.XsrfFormHtml())
 	hc.Data["IsHome"] = true
 }
@@ -292,8 +296,7 @@ func (hc *HomeController) Profile() {
 	// Active session required
 	sess := hc.GetSession("sixty")
 	if sess == nil {
-		hc.Redirect("/restricted?profile=n", 302)
-		return
+		hc.Abort("403")
 	}
 	sm := sess.(map[string]interface{})
 
@@ -476,8 +479,12 @@ func (hc *HomeController) Profile() {
  * it presents and processes the login form
  */
 func (hc *HomeController) Login() {
-	hc.activeContent("login")
+	if hc.Ctx.Input.Data[802] != nil {
+		hc.CustomAbort(802, hc.Ctx.Input.Data[802].(string))
+		return
+	}
 
+	hc.activeContent("login")
 	// Parse the RequestURI
 	u, err := url.Parse(hc.Ctx.Request.URL.RequestURI())
 	if err != nil {
@@ -491,17 +498,14 @@ func (hc *HomeController) Login() {
 		hc.Redirect("/", 302)
 		return
 	}
-
 	// Refresh flash content displayed by login.tpl
 	flash := beego.ReadFromRequest(&hc.Controller)
 	if fn, ok := flash.Data["notice"]; ok {
 		hc.Data["notice"] = fn
 	}
-
 	// Process Login values submitted by user when method is POST
 	if hc.Ctx.Input.Method() == "POST" {
 		flash := beego.NewFlash()
-
 		if err := hc.Ctx.Request.ParseForm(); err != nil {
 			flash.Notice("Error processing Login form")
 			flash.Store(&hc.Controller)
@@ -509,7 +513,6 @@ func (hc *HomeController) Login() {
 			hc.Redirect("/", 302)
 			return
 		}
-
 		//	Try to get user's DB record using input username
 		//	continue on success otherwise fail with flash message
 		logUsr := hc.Ctx.Request.Form.Get("username")
@@ -541,7 +544,6 @@ func (hc *HomeController) Login() {
 		} else {
 			emAddr = ptAddr
 		}
-
 		// Create "sixty" session, init with user session values, return to home
 		sm := make(map[string]interface{})
 		sm["email"] = emAddr // unencrypted email address
