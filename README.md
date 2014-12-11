@@ -24,15 +24,36 @@ This will install the application executable **sixty** (linux) or **sixty.exe** 
 
 ## Get the Source Code
 
-#### **NOTICE:** New Development Moved to Dev60 Branch.
-
 From the **master** branch, click **Clone in Desktop** if you don't plan to submit updates to the project.
 
 To **Fork** this project with the intent of contributing bug fixes,
 modification or new stuff follow the [instructions here](https://help.github.com/articles/fork-a-repo/)
-using the **dev60** branch.
 
 Click **Download ZIP** from master (more stable) or dev60 (not stable) to get a completely independent copy to do with as you please within the limits of the *LICENSE* (see below).
+
+**Note:** I've made the following  modification to CheckXsrfCookie() in my vendored copy of *beego/context/context.go*
+
+**changed**
+
+    if token == "" {
+    	ctx.Abort(403, "'_xsrf' argument missing from POST")
+    } else if ctx._xsrf_token != token {
+    	ctx.Abort(403, "XSRF cookie does not match POST argument")
+    }
+	
+**to**
+
+    if token == "" {
+    	ctx.Abort(403, "403")
+    } else if ctx._xsrf_token != token {
+    	ctx.Abort(403, "403")
+    }
+
+Without this change, a user with cookies disabled may see a white screen, or a panic message depending on system/previous activity. With the change, a 403 error is displayed.
+
+A more user friendly solution is to change "403" to something like "601" and modify *beego/middleware/error.go* by adding a 601 "CookiesDisabled" function and registering it in RegisterErrorHandler().
+
+I've reported the problem and both solutions as an issue on the beego project.
 
 ## Features
 
@@ -45,7 +66,7 @@ Click **Download ZIP** from master (more stable) or dev60 (not stable) to get a 
 * Demonstrates a simple 1:many Database relationship
 * Uses Beego's per request *context* along with persistent *sessions*
 * Demonstrates *bootstap's* responsive grid. Usable smart phone > desktop 
-* App can be used as a template for gaging public interest in any idea
+* Can be used as a template for gaging public interest in other ideas
 
 ## Documentation (Technical)
 
