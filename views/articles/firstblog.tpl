@@ -1,24 +1,24 @@
-<div class="container row home-box blogpost">
+<div class="container home-box blogpost">
 	<div class="col-md-9">
+		<br>
 		<p class="title">The 60+ Blog's 1st Article</p><br>
-		<img src="static/img/gopher/header.jpg" class="img-responsive"></img>
-		<p class="content">The Go gopher is an iconic mascot and one of the most distinctive features of the Go project. In this post we'll talk about his origins, evolution, and behavior. He next made an appearance at Bell Labs, as Bob Flandrena's <a href="http://research.swtch.com/face" target="_blank">avatar</a> in the Bell Labs mail system. Other Renee drawings became avatars for ken, r, rsc, and others. (Of course, Peter Weinberger's was his own <a href="http://spinroot.com/pico/pjw.html" target="_blank">iconic face</a>).<br>
-		</p>
+		<img src="static/img/blog/firstpost/blog_header.jpg" class="img-responsive"></img>
+		<p class="content">This adventure began as a decision to abandon retirement and do something interesting. "Something interesting" ended up being the construction of this web site. As all travellers know, the road from decision to destination is rarely a smooth, straight line. This article will chronicle the ups, downs and blind curves that led to this point... a point still very early in the adventure.<br>
 	</div>
-	{{template "bloglinks.tpl" .}}<br>		
+	{{template "bloglinks.tpl" .}}
+	<div class="col-md-9">
+		<p class="content">The decision was made last June, over six months ago as I write this. I was nearly a decade into my second attempt at retirement. The novelty of having very little that <em>had</em> to be done was wearing thin. <br><br>
+		My career as a self-taught software developer had spanned over 25 years going back to the early 1980s. That was a few years after I bought <a href="http://oldcomputers.net/trs80i.html" target="_blank">one of these</a> in 1978. I spent way too many hours in a closet/computer room learning to program it. First in Basic, then in Z-80 assembler, a machine level language. Only now do I appreciate that my long-suffering wife tolerated spending the equivalent of $2,400 in today's dollars on the guy-toy shown below.</p><br>
+		<img src="static/img/blog/firstpost/trs80.jpg" class="img-responsive"></img>
+		<p class="content">This expensive toy sparked an inner fire that led from sales guy to computer guy. I'll spare you the details of the move from Basic to Turbo Pascal to Delphi and the companies I worked for or co-founded over the years.<br><br>The bottom line is that those years of experience beckoned as the question "What to do next?" became more pressing. The answer became clear. It was time to catch up with technology and write some software. The follow up question involved what to do about the lack of so much as a single college credit and the lack of any Internet related experience. The answer... go back to school ...college level school.</p><br>
+		<img src="static/img/blog/firstpost/harvard01.jpg" class="img-responsive"></img><br><br><em>Radcliff Quadrangle is one of many beautiful areas at Harvard. Like all the rest, I have not seen it in person.</em>
+	</div>
 	<div class="col-md-9">
 		<br>
-		<p class="content">About 15 years ago—long before the Go project—the gopher first appeared as a promotion for the <a href="https://wfmu.org/">WFMU radio station</a> in New Jersey.  <a href="http://reneefrench.blogspot.com" target="_blank">Renee French</a> was commissioned to design a T-shirt for an annual fundraiser and out came the gopher.<br><br>
-		</p>
-		<img src="static/img/gopher/wfmu.jpg" class="img-responsive"></img><br><br>Renee's T-shirt design is shown here.
+		<p class="content">Thus began online research into MOOCs... that is to say <a href="http://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank">Massive Open Online Courses</a>. In my case a MOOC offered a 68 year old guy living in Mexico an opportunity to take a well known, <a href=http://www.businessinsider.com/why-so-many-harvard-students-take-computer-science-2014-9>wildly popular</a> Harvard college class <a href="https://www.edx.org" target="_blank">via edX</a> for free. Well, for $90 since I wanted to get a verified certificate upon successfully completing the class.<br><br>That course is called CS50 in the Harvard catalog. It is an introduction to Computer Science that is designed to challenge students who got into Harvard the hard way. Even with my years of experience, would I be up to the challenge?<br><br></p>
+		<img src="static/img/blog/firstpost/cs50_lecture.jpg" class="img-responsive"></img><br><br><em>Professor Malan in the CS50 lecture hall</em><p class="content"><br> This website is my "final project" for the course. Each of the nine assignments leading up to this was more challenging than the one before. All required using programming languages I hadn't used before. The last two involved developing or interacting with Internet applications. More than a few times it seemed as though I'd bitten off more than I could chew.<br><br>I learned that a 68 year old memory is not as sharp as a 30 year old memory. I also learned that being forced to use a 68 year old memory makes it sharper.<br><br>Through it all, the words of a mentor I'd worked with on a tough project years ago would echo in my head. "Baby steps" he'd say when a problem seemed overwhelming... "Baby steps". Sure enough every problem had a solution. Unlike many students taking the class, I was fortunate to have the free time needed to break challenging issues into baby steps. In summary, the CS50 experience has been all I'd hoped for and more.</p>
 	</div>
 	<div class="col-md-9">
-		<br>
-		<p class="content">For the open source launch in 2009, Renee suggested adapting the WFMU gopher as a mascot. And the Go gopher was born:</p><br>
-		<img src="static/img/gopher/gopher.png" class="img-responsive"></img><br><br>The Go Gopher we now know and love.
-	</div>
-	<div class="col-md-9">
-		<br><br>
-		<p class="content">This test 60+ Adventures blog post is derived from <a href="http://blog.golang.org/gopher" target="_blank">this article </a> on the golang.org blog</p>
+		<p class="content">The next article is a tribute to a mascot. A topic dictated by my decision to learn yet another programming language for this project. The language is called <em>Go</em>. The mascot is a gopher. <a href="blog?dest=gopher">Check it out!</a></p>
 	</div>
 </div>

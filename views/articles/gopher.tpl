@@ -1,63 +1,36 @@
-<div class="blogpost">
-
-	<p class="title">{{.ArticleTitle}}</p><br>
-	<div class="col-md-10">
-		<img src="static/img/gopher/header.jpg" class="img-responsive"></img>
-		<p class="content">The Go gopher is an iconic mascot and one of the most distinctive features of the Go project. In this post we'll talk about his origins, evolution, and behavior.</p>
-	</div>
-	{{template "destinations.tpl" .}}<br>		
-	<div class="col-md-10">
+<div class="container home-box blogpost">
+	<div class="col-md-9">
 		<br>
-		<p class="content">About 15 years ago—long before the Go project—the gopher first appeared as a promotion for the <a href="https://wfmu.org/">WFMU radio station</a> in New Jersey.  <a href="http://reneefrench.blogspot.com" target="_blank">Renee French</a> was commissioned to design a T-shirt for an annual fundraiser and out came the gopher.
-		</p>
-		<img src="static/img/gopher/wfmu.jpg" class="img-responsive"></img><br>
-		<p class="content">He next made an appearance at Bell Labs, as Bob Flandrena's <a href="http://research.swtch.com/face" target="_blank">avatar</a> in the Bell Labs mail system. Other Renee drawings became avatars for ken, r, rsc, and others. (Of course, Peter Weinberger's was his own <a href="http://spinroot.com/pico/pjw.html" target="_blank">iconic face</a>).</p>
-		<img src="static/img/gopher/avatars.png" class="img-responsive"></img><br>
-
-		Another Bell Labs activity led to Renee creating [[http://plan9.bell-labs.com/plan9/glenda.html][Glenda]], the Plan 9 mascot, a distant cousin of the WFMU gopher.
-
-		.image gopher/glenda.png
-
-		When we started the Go project we needed a logo, and Renee volunteered to draw it. It was featured on the first Go T-shirt and the Google Code site.
-
-		.image gopher/logo.png
-
-		For the open source launch in 2009, Renee suggested adapting the WFMU gopher as a mascot. And the Go gopher was born:
-
-		.image gopher/gopher.png
-
-		(The gopher has no name. He's just the "Go gopher".)
-
-		For the [[https://www.youtube.com/watch?v=-i0hat7pdpk#t=24m40s][launch]] of the [[https://developers.google.com/appengine/docs/go][Go App Engine runtime]] at Google I/O 2011 we engaged [[http://squishable.com][Squishable]] to manufacture the plush gophers. This was the first time the gopher was colored blue and appeared in three dimensions. The first prototype was kinda hairy:
-
-		.image gopher/prototype.jpg
-
-		But the second one was just right:
-
-		.image gopher/plush.jpg
-
-		Around the same time, Renee roughed out a gopher in clay. This inspired a refined sculpture that became a vinyl figurine made by [[http://www.kidrobot.com/][Kidrobot]]. The vinyls were first distributed at OSCON 2011.
-
-		.image gopher/vinyl.jpg
-
-		The gopher therefore exists in many forms, but he has always been Renee's creation. He stands for the Go project and Go programmers everywhere, and is one of the most popular things in the Go world.
-
-		The Go gopher is a character; a unique creation. He's not any old gopher, just as Snoopy is not any old cartoon dog.
-
-		The [[http://golang.org/doc/gopher/][gopher images]] are Creative Commons Attributions 3.0 licensed. That means you can play with the images but you must give credit to their creator (Renee French) wherever they are used.
-
-		Here are a few gopher adaptations that people have used as mascots for user group mascots and similar organizations.
-
-		.image gopher/usergroups.png
-
-		They're cute and we like them, but by the Creative Commons rules the groups should give Renee credit, perhaps as a mention on the user group web site.
-
-		The vinyl and plush gophers are copyrighted designs; accept no substitutes! But how can you get one? Their natural habitat is near high concentrations of Go programmers, and their worldwide population is growing. They may be purchased from the [[https://www.googlestore.com/Google+Redesign/Brands/Gopher/Go+Gopher+Squishable.axd][Google Store]], although the supply can be irregular. (These elusive creatures have been spotted in all [[http://www.flickr.com/photos/pinkhamsters/sets/72157627910426064/][kinds]] [[https://plus.google.com/107966629974328136037/posts/TcFA9zHzQB8][of]] [[https://twitter.com/goroutine][places]].)
-
-		Perhaps the best way to get a gopher is to catch one in the wild at a Go conference. There are two big chances this year: [[http://gophercon.com/][GopherCon]] (Denver, April 24-26) and [[http://dotgo.eu][dotGo]] (Paris, October 10).
-
-		.image gopher/portrait.jpg
-
-		_(Photo_by_ [[https://twitter.com/noahhlo/status/437395572081688576][_Noah_Lorang_]]_.)_
+		<p class="title">The Go Gopher Tribute Page</p><br>
+		<img src="static/img/blog/gopher/header.jpg" class="img-responsive"></img>
+		<p class="content">The Go gopher is an iconic mascot and one of the most distinctive features of the <em>Go</em> project. This article talks about his origins, evolution, and behavior. About 15 years ago—long before the Go project—the gopher first appeared as a promotion for the <a href="https://wfmu.org/">WFMU radio station</a> in New Jersey. <a href="http://reneefrench.blogspot.com" target="_blank">Renee French</a> was commissioned to design a T-shirt for an annual fundraiser and out came the gopher.
+		</p><br>
+	</div>
+	{{template "bloglinks.tpl" .}}<br>		
+	<div class="col-md-9">
+		<img src="static/img/blog/gopher/wfmu.jpg" class="img-responsive"></img><br><br>Renee's T-shirt design is shown here.
+	</div>
+	<div class="col-md-9">
+		<br>
+		<p class="content">He next made an appearance at Bell Labs, as Bob Flandrena's <a href="http://research.swtch.com/face" target="_blank">avatar</a> in the Bell Labs mail system. Other Renee drawings became avatars for ken, r, rsc, and others later involved in the <em>Go</em> project. (Of course, Peter Weinberger's was his own <a href="http://spinroot.com/pico/pjw.html" target="_blank">iconic face</a>). Another Bell Labs activity led to Renee creating Glenda, the Plan 9 mascot, a distant cousin of the WFMU gopher.</p><br>
+		<img src="static/img/blog/gopher/avatars.png" class="img-responsive"></img><br>Avatars from back in the day.
+	</div>
+	<div class="col-md-9">
+		<br>
+		<img src="static/img/blog/gopher/glenda.png" class="img-responsive"></img><br><br><br><br>Long lost cousin Glenda revealed.
+	</div>
+	<div class="col-md-9">
+		<br>
+		<p class="content">When the Go project started, its authors needed a logo, and Renee volunteered to draw it. It was featured on the first Go T-shirt and the Google Code site.</p><br>
+		<img src="static/img/blog/gopher/logo.png" class="img-responsive"></img><br>The original Go project logo.
+	</div>
+	<div class="col-md-9">
+		<br>
+		<p class="content">For the open source launch of <em>Go</em> in 2009, Renee suggested adapting the WFMU gopher as a mascot. And the <em>Go Gopher</em> was born:</p><br>
+		<img src="static/img/blog/gopher/gopher.png" class="img-responsive"></img><br><br><b>The Go Gopher we now know and love.<br><br>Happy 5th Anniversary to him and congrats to everyone on the team that made <em>Go</em> happen</b>.
+	</div>
+	<div class="col-md-9">
+		<br><br>
+		<p class="content">This 60+ Adventures blog post is derived from an article posted on the golang.org blog.<br><a href="http://blog.golang.org/gopher" target="_blank"><em>Check it out </a> to see "the rest of the story".</em></p>
 	</div>
 </div>

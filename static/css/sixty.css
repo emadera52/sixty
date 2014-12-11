@@ -258,7 +258,8 @@ text-align: center;
 #msg-cols img {
     max-width: 100%;
     vertical-align: middle;
-    padding-top: 20px;
+    padding-top: 10px;
+	margin-bottom: 10px;
 }
 
 #images {
@@ -299,10 +300,12 @@ text-align: center;
     margin: 10px 0 10px;
     padding: 0 10px;
     line-height: 1.5;
-    color: #1a4b57;
+    color: #1a4b37;
     text-align: left;
 }
-
+.home-box .content a {
+	color: #088aff;
+}
 .home-box .question {
     margin: 10px 0 10px;
     padding: 0 10px;
@@ -357,7 +360,7 @@ text-align: center;
 }
 
 .blogpost img {
-    width: 50%;
+    width: 40%;
 	margin-left: 10px;
 	margin-right: 20px;
 	float: left;
