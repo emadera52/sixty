@@ -32,6 +32,7 @@ func init() {
 	beego.Router("/delete", &controllers.HomeController{}, "get:Delete")
 	beego.Router("/restricted", &controllers.HomeController{}, "get:Restricted")
 	beego.Router("/comments", &controllers.CommentsController{}, "get,post:Comment")
+	beego.Router("/blog", &controllers.BlogController{}, "get:Blog")
 	beego.Router("/construction", &controllers.ConstructionController{}, "get:Construction")
 	// TODO add email service in order to provide email verification
 	//	and password reset functionality
