@@ -25,7 +25,7 @@
 				<div>
 					<input class="field" name="username" type="text"
 					placeholder="Screen name (user name)"
-					Maxlength="30" required autofocus/>
+					Maxlength="30" required />
 					<div class="img-info">
 						<img src="static/img/base/info.png" alt="info" />
 						<p class="img-text">Enter the Screen Name you used when you registered</p>
@@ -42,7 +42,7 @@
 				{{.xsrftoken}}
 				<div>
 				<input class="button" type="submit"
-				  value="Sign In"/>&nbsp;&nbsp;&nbsp;
+				  value="Sign In" autofocus />&nbsp;&nbsp;&nbsp;
 				  <a href="/login?cancel=y">&nbsp;Cancel&nbsp;</a>
 				</div>  
 				</form>  

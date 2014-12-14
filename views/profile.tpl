@@ -21,7 +21,7 @@
 			<form id="signup" action="/profile" method="POST">
 				<div><input class="field" name="email"
 					type="email" value={{.Email}}
-					maxlength="128" autofocus/>
+					maxlength="128"/>
 					<div class="img-info">
 					  <img src="static/img/base/info.png" alt="info" />
 					  <p class="img-text">Changing your email address will reset your status to unverified.</p>
@@ -74,7 +74,7 @@
 					<p class="img-text">Caution: This will remove all of your information from 60+ Adventures.</p>
 				</div>&nbsp;&nbsp;&nbsp;
 				<input class="button" type="submit"
-				value="Update Profile"/>&nbsp;&nbsp;&nbsp;
+				value="Update Profile" autofocus />&nbsp;&nbsp;&nbsp;
 				<a href="/profile?cancel=y">&nbsp;Cancel&nbsp;</a>
 			</form>
 		</div>
