@@ -21,7 +21,9 @@ To use this method you must have [Git installed](http://git-scm.com/book/en/v2/G
 
 	go get github.com/emadera52/sixty
 
-This will install the application executable **sixty** (linux) or **sixty.exe** (windows) in *GOPATH/bin* which is why it's handy to add that to your *PATH*. Source code for the project will be in *GOPATH/src/github.com/emadera52/sixty*. Source code for **Beego**, and the required **MySQL** driver will also be in the *GOPATH/src/github.com* directory. Source code for **advanced encryption and encoding** will be in *GOPATH/src/golang.org/x/crypto*. Those are the only external dependencies.
+This will install the application executable **sixty** (linux) or **sixty.exe** (windows) in *GOPATH/bin* which is why it's handy to add that to your *PATH*.
+
+Source code for the project will be in *GOPATH/src/github.com/emadera52/sixty*. Source code for **Beego**, and the required **MySQL** driver will also be in the *GOPATH/src/github.com* directory. Source code for **advanced encryption and encoding** will be in *GOPATH/src/golang.org/x/crypto*. Those are the only external dependencies.
 
 ## Get the Source Code - Other Options
 
