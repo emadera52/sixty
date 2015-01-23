@@ -18,8 +18,8 @@
 package secretbox
 
 import (
-	"code.google.com/p/go.crypto/nacl/secretbox"
 	"crypto/rand"
+	"golang.org/x/crypto/nacl/secretbox"
 	"io"
 )
 
@@ -64,6 +64,9 @@ func NewKey() *[KeySize]byte {
 	return &key
 }
 
+// Encrypt takes byteslice 'in' and encrypts it using 'key' byte array
+// Returns encrypted byteslice and 'true' if successful,
+// otherwise returns nil and 'false'
 func Encrypt(key *[KeySize]byte, in []byte) ([]byte, bool) {
 	var out = make([]byte, nonceSize)
 	nonce := newNonce()
@@ -76,6 +79,8 @@ func Encrypt(key *[KeySize]byte, in []byte) ([]byte, bool) {
 	return out, true
 }
 
+// Decrypt takes encrypted byteslice 'in' and decrypts it using 'key' byte array
+// Returns decrypted byteslice and 'true' if successful. See secretbox.Open
 func Decrypt(key *[KeySize]byte, in []byte) ([]byte, bool) {
 	if len(in) < nonceSize {
 		return nil, false
